@@ -44,6 +44,14 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+				mathematical: {
+					DEFAULT: 'hsl(var(--mathematical))',
+					foreground: 'hsl(var(--mathematical-foreground))'
+				},
+				geometric: {
+					DEFAULT: 'hsl(var(--geometric))',
+					foreground: 'hsl(var(--geometric-foreground))'
+				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -84,11 +92,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-gentle': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-4px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-gentle': 'pulse-gentle 2s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
